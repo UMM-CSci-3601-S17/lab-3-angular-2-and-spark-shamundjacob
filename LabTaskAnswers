@@ -6,3 +6,10 @@ Notice anything new in our .gitignore? There are actually multiple .gitignore fi
 Note also that there are now multiple build.gradle files as well! Why is this?
 There are 3 build.gradle files. One fore the server, client, and (Parameters of the project depends on, Returns what the project depends on, Throws an exception if no project exists in a given path)
 
+What are a couple of these new tools? What do you think they do?
+-Typescript, yarn. Typescript converts different language types to java. yarn is a package manager for javascript, holds the
+packages we use for javascript together.
+
+How does the navbar work in this project? Is our SparkJava server the only thing doing routing?
+It reroutes us to different pages within the same web page. No, we had to run the client and the server. The server
+contains the list of names that the client can filter through.
