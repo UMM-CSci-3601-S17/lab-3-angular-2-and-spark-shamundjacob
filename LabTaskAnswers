@@ -2,7 +2,7 @@ Notice anything new in our .gitignore? There are actually multiple .gitignore fi
  can you find them all?
         -> In our gitignore files there were multiple new files which we did not recognize (nohup.out, yarn.error.log, yarn.stdout.log, yarn , yarn-server-pid.lock)
         We found 3 gitignore files
-
+   
 Note also that there are now multiple build.gradle files as well! Why is this?
 There are 3 build.gradle files. One fore the server, client, and (Parameters of the project depends on, Returns what the project depends on, Throws an exception if no project exists in a given path)
 
