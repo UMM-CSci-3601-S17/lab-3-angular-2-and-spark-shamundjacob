@@ -6,7 +6,7 @@ import { FilterBy } from "./filter.pipe";
 @Component({
     selector: 'todo-list-component',
     providers: [ToDoListService],
-    templateUrl: 'todo-list.component.html',
+    templateUrl: 'Todo-List.component.html',
 })
 
 export class TodoListComponent {

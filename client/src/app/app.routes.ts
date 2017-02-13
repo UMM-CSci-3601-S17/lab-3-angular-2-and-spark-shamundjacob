@@ -4,6 +4,7 @@ import { Routes, RouterModule } from '@angular/router';
 import { HomeComponent } from './home/home.component';
 import {TodoListComponent} from "./ToDo/todo-list.component";
 import {UserListComponent} from "./users/user-list.component";
+import {KittensComponent} from "./kittens/kittens.component";
 
 // Route Configuration
 export const routes: Routes = [
