@@ -1,6 +1,6 @@
 
 export interface ToDo {
-    id: string,
+    _id: string,
     owner: string,
     status: boolean,
     body: string,

@@ -8,6 +8,7 @@ import umm3601.todo.ToDoController;
 import umm3601.user.UserController;
 
 import java.io.IOException;
+import java.util.*;
 
 
 public class Server {
@@ -37,7 +38,7 @@ public class Server {
         // Simple example route
         get("/hello", (req, res) -> "Hello World");
 
-        // Redirects for the "home" page
+        // Redirects for the "home" pageTitle
         redirect.get("", "/");
         redirect.get("/", "http://localhost:9000");
 
