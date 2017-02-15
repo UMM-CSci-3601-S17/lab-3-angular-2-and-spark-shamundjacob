@@ -36,10 +36,10 @@ export class FilterBy implements PipeTransform {
           return false;
         }
       }
-
       return true;
     }
   }
+
 
   /**
    * Defatul filterDefault function
@@ -75,6 +75,8 @@ export class FilterBy implements PipeTransform {
 
     }
 }
+
+
 
 // var selectKey = function(){
 //     return document.getElementById('option');
