@@ -25,7 +25,7 @@ export class FilterBy implements PipeTransform {
         let isMatching;
 
         if (type === 'string') {
-          isMatching = this.filterByString(filter[key])(value[key]);
+          isMatching = (this.filterByString(filter[key]))(value[key]);
         } else if (type === 'object') {
           isMatching = this.filterByObject(filter[key])(value[key]);
         } else {
@@ -36,10 +36,10 @@ export class FilterBy implements PipeTransform {
           return false;
         }
       }
-
       return true;
     }
   }
+
 
   /**
    * Defatul filterDefault function
@@ -75,3 +75,9 @@ export class FilterBy implements PipeTransform {
 
     }
 }
+
+
+
+// var selectKey = function(){
+//     return document.getElementById('option');
+// }
