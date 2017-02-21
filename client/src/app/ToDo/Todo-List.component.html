@@ -3,14 +3,21 @@
         <input #input type="text" placeholder="Filter by owner" (input)="searchOwner = $event.target.value">
         <input #input type="text" placeholder="Filter by id" (input)="searchID = $event.target.value">
         <input #input type="text" placeholder="Filter by body" (input)="targetBody = $event.target.value">
-        <input #ref type="checkbox" name="complete"  value="true" (input)="searchStatus = $event.target.value"> complete
-        <input #ref type="checkbox" name="incomplete" value="false" (input)="searchStatus = $event.target.value"> incomplete
         <input #input type="text" placeholder="Filter by category" (input)="sCategory = $event.target.value">
+
+        <th>
+            <select class="TF" (input)="searchStatus = $event.target.value">
+                <option value=""></option>
+                <option value="1">true</option>
+                <option value="0">false</option>
+            </select>
+        </th>
+
     </li>
 
     <li class="list-group-item list-group-item-info">ToDo</li>
 
-    <li *ngFor="let todo of todos | async | filterBy: {owner: searchOwner} | filterBy: {_id: searchID} |
+    <li *ngFor="let todo of todos | filterBy: {owner: searchOwner} | filterBy: {_id: searchID} |
     filterBy: {body: targetBody} | filterBy: {status: searchStatus} | filterBy: {category: sCategory}" class="list-group-item">
         {{ todo._id }} <br>
         {{ todo.owner }} <br>
@@ -19,3 +26,12 @@
         {{ todo.category}} <br>
     </li>
 </ul>
+
+
+<style>
+
+    input, select{
+        width: 150px;
+    }
+
+</style>

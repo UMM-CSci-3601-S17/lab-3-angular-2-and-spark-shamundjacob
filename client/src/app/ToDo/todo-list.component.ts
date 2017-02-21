@@ -1,12 +1,11 @@
 import {Component, OnInit} from '@angular/core';
 import { ToDoListService } from "./todo-list.service";
-import { FormsModule } from '@angular/forms';
 import { FilterBy } from "./filter.pipe";
 import {ToDo} from "./ToDo";
 
 @Component({
     selector: 'todo-list-component',
-    providers: [ FilterBy ],
+    providers: [ FilterBy, ToDoListService ],
     templateUrl: 'Todo-List.component.html',
 })
 
