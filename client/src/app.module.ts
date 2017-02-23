@@ -12,7 +12,6 @@ import { routing } from './app/app.routes';
 import { FormsModule } from '@angular/forms';
 
 import { PipeModule } from './pipe.module';
-import {TodoComponent} from "./app/ToDo/todo.component";
 import {TodoListComponent} from "./app/ToDo/todo-list.component";
 import {ToDoListService} from "./app/ToDo/todo-list.service";
 
